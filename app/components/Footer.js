@@ -2,7 +2,7 @@
 import { Container, Flex, Stack, Text } from '@mantine/core';
 import { Roboto } from 'next/font/google';
 import Image from 'next/image';
-import { usePathname } from 'next/navigation'
+import { usePathname, useRouter } from 'next/navigation'
 import React from 'react'
 
 const roboto = Roboto({
@@ -12,6 +12,7 @@ const roboto = Roboto({
   
 const Footer = () => {
     const path = usePathname();
+    const router = useRouter();
     console.log(path);  
   return (
     <footer  className={path === "/sign-up"  ? "display_none" :""} style={{ backgroundColor:'white',padding:20}}>
@@ -24,7 +25,7 @@ const Footer = () => {
         </Stack>
         <Stack gap='sm'>
           <Text className={roboto.className} order={3}>Page</Text>
-          <Text style={{cursor:'pointer'}} className={`${roboto.className}`}  c='gray'>Home</Text>
+          <Text onClick={()=>router.push("https://buy.stripe.com/test_7sIbM90OO3rGemQ5kn")} style={{cursor:'pointer'}} className={`${roboto.className}`}  c='gray'>Home</Text>
             <Text style={{cursor:'pointer'}} className={`${roboto.className}`} c='gray'>Login</Text>
             <Text style={{cursor:'pointer'}} className={`${roboto.className}`}  c='gray'>About</Text>
         </Stack>

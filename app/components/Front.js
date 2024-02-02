@@ -2,8 +2,10 @@
 import { BackgroundImage, Box, Button, Card, Center, Container, Divider, Flex, Grid, Group, List, Paper, Space, Stack, Tabs, Text, Title } from '@mantine/core';
 import { Roboto } from 'next/font/google';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 import React from 'react'
 import { FaRegCircleCheck } from "react-icons/fa6";
+
 
 const roboto = Roboto({
     subsets:['latin'],
@@ -13,6 +15,7 @@ const roboto = Roboto({
 
 
 const Front = () => {
+  const router = useRouter();
     function customScrollDownAnimationInfo() {
         const targetPosition = 350; // Set your target scroll position in pixels
         const duration = 1000; // Set the duration of the animation in milliseconds
@@ -152,7 +155,7 @@ const Front = () => {
                         <List.Item>Regular Updates</List.Item>
                         <List.Item>Usage Limit</List.Item>
                         </List>
-                        <Button radius='xl'>Get Started</Button>
+                        <Button radius='xl' onClick={()=>router.push("https://buy.stripe.com/test_28oeYl7dc4vK4Mg8wy")}>Get Started</Button>
                     </Flex>
                   </Card>
                 </Grid.Col>
@@ -175,7 +178,7 @@ const Front = () => {
                         <List.Item>Extended Usage Limits</List.Item>
                         <List.Item>Exclusive Features</List.Item>
                         </List>
-                        <Button radius='xl'>Get Started</Button>
+                        <Button radius='xl' onClick={()=>router.push("https://buy.stripe.com/test_7sIbM90OO3rGemQ5kn")}>Get Started</Button>
                     </Flex>
                   </Card>
                 </Grid.Col>
@@ -198,7 +201,7 @@ const Front = () => {
                         <List.Item>Unlimited Usage</List.Item>
                         <List.Item>Customization Options</List.Item>
                         </List>
-                        <Button radius='xl'>Get Started</Button>
+                        <Button radius='xl' onClick={()=>router.push("https://buy.stripe.com/test_5kAdUh7dcbYc4Mg28c")}>Get Started</Button>
                     </Flex>
                   </Card>
                 </Grid.Col>
@@ -225,7 +228,7 @@ const Front = () => {
                         <List.Item className={roboto.className}>Customer Support</List.Item>
                         <List.Item className={roboto.className}>Usage Limit</List.Item>
                         </List>
-                        <Button radius='xl'>Get Started</Button>
+                        <Button radius='xl' onClick={()=>router.push("https://buy.stripe.com/test_3cs5nL7dc0fuemQ3ch")}>Get Started</Button>
                     </Flex>
                   </Card>
                 </Grid.Col>
@@ -248,7 +251,7 @@ const Front = () => {
                         <List.Item>Exclusive Recycling Reports</List.Item>
                         <List.Item>Customization Options</List.Item>
                         </List>
-                        <Button radius='xl'>Get Started</Button>
+                        <Button radius='xl' onClick={()=>router.push("https://buy.stripe.com/test_bIY3fD9lk4vK92w4gm")}>Get Started</Button>
                     </Flex>
                   </Card>
                 </Grid.Col>
@@ -271,7 +274,7 @@ const Front = () => {
                         <List.Item>Customized Sustainability </List.Item>
                         <List.Item>Educational Workshops</List.Item>
                         </List>
-                        <Button radius='xl'>Get Started</Button>
+                        <Button radius='xl' onClick={()=>router.push("https://buy.stripe.com/test_fZe3fDcxw1jy6Uo3cj")}>Get Started</Button>
                     </Flex>
                   </Card>
                 </Grid.Col>
