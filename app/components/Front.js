@@ -3,21 +3,19 @@ import { BackgroundImage, Box, Button, Card, Center, Container, Divider, Flex, G
 import { Roboto } from 'next/font/google';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
-import React from 'react'
-import { FaRegCircleCheck } from "react-icons/fa6";
-
+import React from 'react';
+import { FaRegCircleCheck } from 'react-icons/fa6';
+import img from '@/public/img.jpg';
 
 const roboto = Roboto({
-    subsets:['latin'],
-    weight:['300','700']
-})
-  
-
+  subsets: ['latin'],
+  weight: ['300', '700'],
+});
 
 const Front = () => {
   const router = useRouter();
     function customScrollDownAnimationInfo() {
-        const targetPosition = 350; // Set your target scroll position in pixels
+        const targetPosition = 250; // Set your target scroll position in pixels
         const duration = 1000; // Set the duration of the animation in milliseconds
         const framesPerSecond = 60;
         const increment = targetPosition / (duration / 1000 * framesPerSecond);
@@ -37,7 +35,7 @@ const Front = () => {
         animateScroll(window.scrollY, new Date().getTime());
       }
       function customScrollDownAnimationService() {
-        const targetPosition = 900; // Set your target scroll position in pixels
+        const targetPosition = 470; // Set your target scroll position in pixels
         const duration = 500; // Set the duration of the animation in milliseconds
         const framesPerSecond = 60;
         const increment = targetPosition / (duration / 1000 * framesPerSecond);
@@ -60,28 +58,30 @@ const Front = () => {
     
       return (
         <Container className='container'>
-          <Space h={100}/>
+          <Space h={100} />
           <Card className='card_image' shadow='sm' radius='lg'>
             <Flex justify='space-evenly' align='center' h={400}>
               <Box>
                 <Stack>
-                <Box>
-                    <Title className={roboto.className}>Dispose Responsibly,</Title>
-                    <Title className={roboto.className}>Create Impact.</Title>
-                </Box>
-                <Box>
-                  <Text className={roboto.className}> Taking the 4R's (Reduce,Reuse,Recycle,Recover)</Text>
-                  <Text className={roboto.className}> to the next level</Text>
-                </Box>
-                  <Group gap={10}> 
-                    <Button className={roboto.className} variant='outline' onClick={customScrollDownAnimationInfo}>Read More</Button>
-                    <Button variant='filled' bg='green.7' onClick={customScrollDownAnimationService}>Explore our Services</Button>
+                  <Box>
+                    <Title className={roboto.className}>{`Dispose Responsibly, 'Create Impact.'`}</Title>
+                  </Box>
+                  <Box>
+                    <Text className={roboto.className}> Taking the 4Rs (Reduce,Reuse,Recycle,Recover)</Text>
+                    <Text className={roboto.className}> to the next level</Text>
+                  </Box>
+                  <Group gap={10}>
+                    <Button className={roboto.className} variant='outline' onClick={customScrollDownAnimationInfo}>
+                      Read More
+                    </Button>
+                    <Button variant='filled' bg='green.7' onClick={customScrollDownAnimationService}>
+                      Explore our Services
+                    </Button>
                   </Group>
                 </Stack>
-                </Box>
-                <Box>
-                <Image style={{borderRadius:20}} width={400} height={300} src='https://media.istockphoto.com/id/1265555164/photo/portrait-of-black-woman-with-group-of-volunteers-cleaning-nature-together.jpg?s=612x612&w=0&k=20&c=tpZKrO2yMKc6aJtWZP78d8icx1niJ0BmNdgEW2ZCVoE=' radius='lg'/>
               </Box>
+    
+              <Image style={{ borderRadius: 20 }} width={400} height={300} src={img} alt='Image Alt Text' />
             </Flex>
           </Card>
           <Space h={50} />
@@ -91,8 +91,8 @@ const Front = () => {
           <Space h={50} />
           <Grid>
             <Grid.Col span={5}>
-              <BackgroundImage radius='lg' style={{ backgroundSize: 'cover' }} src='https://media.istockphoto.com/id/1145183208/photo/young-volunteers-collecting-garbage-in-suumer-park.jpg?s=612x612&w=0&k=20&c=5vmn8N7X3X-1FW7leDg4N19UMjFFdHjVg_kLguEuENo=' h={400}>
-                <Flex align='end' h={400} justify='center'>
+            <BackgroundImage radius='lg' style={{ backgroundSize: 'cover' }} src='https://media.istockphoto.com/id/1145183208/photo/young-volunteers-collecting-garbage-in-suumer-park.jpg?s=612x612&w=0&k=20&c=5vmn8N7X3X-1FW7leDg4N19UMjFFdHjVg_kLguEuENo='>
+  <Flex align='end' h={400} justify='center'>
                 <Paper opacity={0.9} p={10} my={10} radius='lg'  w={350} h={180}>
                   <Title className={roboto.className} order={3}>In a healthy environment,</Title>
                     <Title className={roboto.className} order={3}>everything succeeds.</Title>
@@ -121,7 +121,7 @@ const Front = () => {
             <Title className={roboto.className}>Service to meet your needs</Title>
           </Center>
           <Center>
-            <Text className={roboto.className}>For all your needs, here's a range of services tailored to you</Text>
+            <Text className={roboto.className}>For all your needs, here are the range of services tailored to you</Text>
           </Center>
           <Space h={60}/>
           <Tabs defaultValue="society" variant='pills' radius='xl'>

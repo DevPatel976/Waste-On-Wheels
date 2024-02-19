@@ -20,7 +20,7 @@ const Footer = () => {
       <Stack>
       <Flex justify="space-around">
         <Stack align='center'> 
-          <Image src='https://wowindia.blog/wp-content/uploads/2023/03/wow-5.png' width={100} height={100} />
+          <Image src='https://wowindia.blog/wp-content/uploads/2023/03/wow-5.png' width={100} height={100} alt=''/>
           <Text c="gray" className={roboto.className}>Waste on Wheels</Text>
         </Stack>
         <Stack gap='sm'>

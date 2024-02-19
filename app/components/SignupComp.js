@@ -11,7 +11,7 @@ const SignupComp = () => {
     <Center>
         <Flex align='center' justify='center'>
           <SignUp />
-          <Image style={{borderRadius:20}} src='https://png.pngtree.com/png-clipart/20200226/original/pngtree-volunteers-clean-up-garbage-in-the-forest-young-people-collect-garbage-png-image_5315130.jpg' width={900} height={900} />
+          <Image style={{borderRadius:20}} src='https://png.pngtree.com/png-clipart/20200226/original/pngtree-volunteers-clean-up-garbage-in-the-forest-young-people-collect-garbage-png-image_5315130.jpg' width={900} height={900} alt=''/>
         </Flex>
     </Center>
     <Space h={30}/>

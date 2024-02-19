@@ -17,7 +17,7 @@ const Contact = () => {
       <Stack>
         <Text className={roboto.className}>HERE TO HELP</Text>
         <Title className={roboto.className}>Contact us</Title>
-        <Text className={roboto.className}>Tell us a bit about yourself, and we'll tell you a lot more about us.</Text>
+        <Text className={roboto.className}>Tell us a bit about yourself, and we&apos;ll tell you a lot more about us.</Text> {/* <-- Corrected line */}
         <Flex gap='md'>
           <Paper shadow='sm' withBorder p='xl'>
             <Stack>
@@ -37,7 +37,7 @@ const Contact = () => {
       </Stack>
       <Box>
         <Stack gap="md" py="xl">
-          <Flex gap={30} direction='column' justify='space-between'>
+          <Flex gap={30} direction='column' justify='space-between' >
             <TextInput className={roboto.className}  placeholder="Name" required/>
             <TextInput className={roboto.className}  placeholder="Email" required />
             <NumberInput className={roboto.className}  placeholder="Phone" required />

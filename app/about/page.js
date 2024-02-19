@@ -17,7 +17,7 @@ const About = () => {
     <Container>
   <Space h={30} />
   <SimpleGrid cols={2} spacing={80} component={Flex} align="center">
-    <Image src={aboutUsImg} height={450} width={450} />
+    <Image src={aboutUsImg} height={450} width={450} alt=''/>
     <Stack>
       <Title className={roboto.className}>Mission</Title>
       <Text className={roboto.className}>we are committed to transforming waste management and promoting a sustainable future. Our innovative project focuses on efficient waste treatment and recycling, which facilitates the central role of individuals and communities in environmental protection.</Text>
