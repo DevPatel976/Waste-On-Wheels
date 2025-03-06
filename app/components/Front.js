@@ -15,7 +15,7 @@ const roboto = Roboto({
 const Front = () => {
   const router = useRouter();
     function customScrollDownAnimationInfo() {
-        const targetPosition = 250; // Set your target scroll position in pixels
+        const targetPosition = 260; // Set your target scroll position in pixels
         const duration = 1000; // Set the duration of the animation in milliseconds
         const framesPerSecond = 60;
         const increment = targetPosition / (duration / 1000 * framesPerSecond);
@@ -35,7 +35,7 @@ const Front = () => {
         animateScroll(window.scrollY, new Date().getTime());
       }
       function customScrollDownAnimationService() {
-        const targetPosition = 470; // Set your target scroll position in pixels
+        const targetPosition = 480; // Set your target scroll position in pixels
         const duration = 500; // Set the duration of the animation in milliseconds
         const framesPerSecond = 60;
         const increment = targetPosition / (duration / 1000 * framesPerSecond);
@@ -60,7 +60,7 @@ const Front = () => {
         <Container className='container'>
           <Space h={100} />
           <Card className='card_image' shadow='sm' radius='lg'>
-            <Flex justify='space-evenly' align='center' h={400}>
+            <Flex direction={{md:''}}  align='center' h={400} p='lg' gap='xl'>
               <Box>
                 <Stack>
                   <Box>
@@ -79,8 +79,8 @@ const Front = () => {
                     </Button>
                   </Group>
                 </Stack>
+
               </Box>
-    
               <Image style={{ borderRadius: 20 }} width={400} height={300} src={img} alt='Image Alt Text' />
             </Flex>
           </Card>

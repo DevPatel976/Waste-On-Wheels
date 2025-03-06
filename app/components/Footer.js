@@ -40,11 +40,11 @@ const Footer = () => {
           <Text className={roboto.className} order={3}>Contact</Text>
             <Text style={{cursor:'pointer'}} className={roboto.className} c='gray'>Mumbai, Maharashtra</Text>
             <Text style={{cursor:'pointer'}} className={roboto.className} c='gray'>+91 8291360709</Text>
-            <Text style={{cursor:'pointer'}} className={roboto.className} c='gray'>example@gmail.com</Text>
+            <Text style={{cursor:'pointer'}} className={roboto.className} c='gray'>pateldev098765@gmail.com</Text>
         </Stack>
       </Flex>
       <Flex justify='space-between' align='end'>
-          <Text style={{cursor:'pointer'}} className={roboto.className} c='gray'>logo 2024 | All rights reserved</Text>
+          <Text style={{cursor:'pointer'}} className={roboto.className} c='gray' > 2024 | All rights reserved</Text>
           <Text style={{cursor:'pointer'}} className={roboto.className} c='gray'>General terms and conditions of use</Text>
           <Text style={{cursor:'pointer'}} className={roboto.className} c='gray'>Terms and Conditions are reserved</Text>
       </Flex>

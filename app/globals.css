@@ -14,3 +14,83 @@
 .display_none{
   display: none;
 }
+/* Chatbot Page Styles */
+.chat-container {
+  background-color: #f5f9f6; /* Light green for eco-friendly vibe */
+  border-radius: 15px;
+  padding: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.chat-message {
+  max-width: 70%;
+  word-wrap: break-word;
+  margin: 5px 0;
+  padding: 10px 15px;
+  border-radius: 15px;
+}
+
+.chat-message.user {
+  background-color: #d9fdd3;
+  color: #333;
+  align-self: flex-end;
+}
+
+.chat-message.bot {
+  background-color: #f0f0f0;
+  color: #555;
+  align-self: flex-start;
+}
+
+.chat-input-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.chat-input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  margin-right: 10px;
+}
+
+.chat-button {
+  background-color: #68b36b; /* Earthy green for eco-themed action */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.chat-button:hover {
+  background-color: #4e8e4e; /* Darker green on hover */
+}
+
+.bin-container {
+  width: 100px;
+  height: 200px;
+  border: 2px solid black;
+  position: relative;
+  overflow: hidden;
+}
+
+.bin {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: green;
+  transition: height 0.5s ease-in-out;
+}
+
+.fill {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: green;
+  transition: height 0.5s ease-in-out;
+}
