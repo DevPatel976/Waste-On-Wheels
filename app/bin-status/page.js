@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
+import "./BinVisualizer.css";
 
 export default function BinStatus() {
     const [binLevel, setBinLevel] = useState(0);
@@ -16,21 +17,20 @@ export default function BinStatus() {
         };
 
         fetchBinLevel();
-        const interval = setInterval(fetchBinLevel, 5000); // Refresh every 5 seconds
+        const interval = setInterval(fetchBinLevel, 5000); 
 
         return () => clearInterval(interval);
     }, []);
 
     return (
-        <div>
-            <h1>Bin Status</h1>
-            <p>Current Bin Level: {binLevel}%</p>
-            <div style={{
-                width: "100px",
-                height: "200px",
-                border: "2px solid black",
-                background: `linear-gradient(to top, gray ${binLevel}%, white ${binLevel}%)`
-            }}>
+        <div className="bin-wrapper">
+            <h1 className="bin-status-title">Bin Status</h1>
+            <p className="bin-level-text">Current Bin Level: {binLevel}%</p>
+            <div className="bin-container">
+                <div 
+                    className="bin-fill"
+                    style={{ height: `${binLevel}%` }}
+                />
             </div>
         </div>
     );

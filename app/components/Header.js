@@ -15,7 +15,9 @@ const Header = async () => {
     <Container size='xl' >
       <Flex justify='space-between' h={60} align='center'>
             <Link href={'/'}>
-            <Image src='https://wowindia.blog/wp-content/uploads/2023/03/wow-5.png' width={50} height={50} alt='' />
+            {/* <Image src='https://wowindia.blog/wp-content/uploads/2023/03/wow-5.png' width={50} height={50} alt='' /> */}
+            <Image src='/wow-5.png' width={50} height={50} alt='WOW Logo' />
+
           </Link>
           <Box>
               <nav>

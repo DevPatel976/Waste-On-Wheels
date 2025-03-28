@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { usePathname, useRouter } from 'next/navigation'
 import React from 'react'
 
+
 const roboto = Roboto({
     subsets:['latin'],
     weight:'500'
@@ -20,7 +21,9 @@ const Footer = () => {
       <Stack>
       <Flex justify="space-around">
         <Stack align='center'> 
-          <Image src='https://wowindia.blog/wp-content/uploads/2023/03/wow-5.png' width={100} height={100} alt=''/>
+          {/* <Image src='https://wowindia.blog/wp-content/uploads/2023/03/wow-5.png' width={100} height={100} alt=''/> */}
+          <Image src='/wow-5.png' width={100} height={100} alt='WOW Logo' />
+
           <Text c="gray" className={roboto.className}>Waste on Wheels</Text>
         </Stack>
         <Stack gap='sm'>
@@ -32,9 +35,9 @@ const Footer = () => {
         <Stack gap='sm'>
           <Text className={roboto.className} order={3}>Founders</Text>
             <Text style={{cursor:'pointer'}} className={`${roboto.className}`}  c='gray'>Dev</Text>
-            <Text style={{cursor:'pointer'}} className={`${roboto.className}`}  c='gray'>Kanika</Text>
-            <Text style={{cursor:'pointer'}} className={`${roboto.className}`}  c='gray'>Prince</Text>
-            <Text style={{cursor:'pointer'}} className={`${roboto.className}`}  c='gray'>Ayman</Text>
+            <Text style={{cursor:'pointer'}} className={`${roboto.className}`}  c='gray'>Tanishq</Text>
+            <Text style={{cursor:'pointer'}} className={`${roboto.className}`}  c='gray'>Karan</Text>
+            <Text style={{cursor:'pointer'}} className={`${roboto.className}`}  c='gray'>Rahil</Text>
         </Stack>
         <Stack gap='sm'>
           <Text className={roboto.className} order={3}>Contact</Text>
