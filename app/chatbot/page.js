@@ -1,8 +1,8 @@
-import Chatbot from '../components/chatbot';
+// import Chatbot from '../components/chatbot';
 
 
-const ChatbotPage = () => {
-  return <Chatbot />;
-};
+// const ChatbotPage = () => {
+//   return <Chatbot />;
+// };
 
-export default ChatbotPage;
+// export default ChatbotPage;

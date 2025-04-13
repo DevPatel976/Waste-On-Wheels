@@ -35,9 +35,9 @@ const Footer = () => {
         <Stack gap='sm'>
           <Text className={roboto.className} order={3}>Founders</Text>
             <Text style={{cursor:'pointer'}} className={`${roboto.className}`}  c='gray'>Dev</Text>
-            <Text style={{cursor:'pointer'}} className={`${roboto.className}`}  c='gray'>Tanishq</Text>
-            <Text style={{cursor:'pointer'}} className={`${roboto.className}`}  c='gray'>Karan</Text>
-            <Text style={{cursor:'pointer'}} className={`${roboto.className}`}  c='gray'>Rahil</Text>
+            <Text style={{cursor:'pointer'}} className={`${roboto.className}`}  c='gray'>Mahi</Text>
+            <Text style={{cursor:'pointer'}} className={`${roboto.className}`}  c='gray'>Siddhant</Text>
+            <Text style={{cursor:'pointer'}} className={`${roboto.className}`}  c='gray'>Faizaan</Text>
         </Stack>
         <Stack gap='sm'>
           <Text className={roboto.className} order={3}>Contact</Text>
